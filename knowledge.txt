@@ -17,3 +17,20 @@ To activate on Windows PowerShell:
 To deactivate:
 deactivate
 
+
+RAG stands for Retrieval Augmented Generation.
+
+Python is a programming language.
+
+Phi-3 is a Small Language Model from Microsoft.
+
+Qwen3 is a model developed by Alibaba.
+
+Ollama is used to run AI models locally.
+
+Git is a distributed version control system.
+
+Bosch Model Farm provides access to GPT, Claude, Gemini and Llama models.
+
+
+mohan is owner of bosch
