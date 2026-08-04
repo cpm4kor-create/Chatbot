@@ -3,9 +3,7 @@ import json
 import ollama
 from openai import OpenAI
 
-# ==================================================
 # Configuration
-# ==================================================
 
 SLM_MODEL = "qwen3"  # Better than phi3
 
@@ -19,9 +17,7 @@ BMF_BASE_URL = (
     "deployments/gpt-5-nano-2025-08-07"
 )
 
-# ==================================================
 # BMF Client
-# ==================================================
 
 def create_bmf_client():
 
@@ -41,9 +37,7 @@ def create_bmf_client():
     return client
 
 
-# ==================================================
 # Ask Local SLM
-# ==================================================
 
 def ask_slm(question):
 
@@ -112,9 +106,7 @@ Example:
     return result
 
 
-# ==================================================
 # Ask BMF
-# ==================================================
 
 def ask_bmf_llm(client, question, conversation_history):
 
@@ -145,9 +137,8 @@ def ask_bmf_llm(client, question, conversation_history):
     return response.choices[0].message.content
 
 
-# ==================================================
 # Main Chatbot
-# ==================================================
+
 
 def cascaded_chatbot():
 
@@ -195,9 +186,8 @@ def cascaded_chatbot():
                 ""
             )
 
-            # ==================================================
+          
             # SLM response
-            # ==================================================
 
             if can_answer and confidence >= 0.70:
 
@@ -221,9 +211,7 @@ def cascaded_chatbot():
                     }
                 )
 
-            # ==================================================
             # LLM fallback
-            # ==================================================
 
             else:
 
@@ -270,9 +258,6 @@ def cascaded_chatbot():
     print("\nGoodbye!")
 
 
-# ==================================================
-# Run
-# ==================================================
 
 if __name__ == "__main__":
     cascaded_chatbot()
