@@ -1,0 +1,19 @@
+Python
+
+Python is a high-level programming language.
+Python is widely used for web development, automation, artificial intelligence, and data science.
+Python uses indentation to define blocks of code.
+Popular Python libraries include pandas, numpy, matplotlib, and requests.
+
+Virtual Environments
+
+A virtual environment isolates project dependencies from the global Python installation.
+You can create a virtual environment using:
+python -m venv .venv
+
+To activate on Windows PowerShell:
+.\.venv\Scripts\Activate.ps1
+
+To deactivate:
+deactivate
+
