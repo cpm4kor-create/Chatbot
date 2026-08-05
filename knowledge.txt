@@ -33,4 +33,4 @@ Git is a distributed version control system.
 Bosch Model Farm provides access to GPT, Claude, Gemini and Llama models.
 
 
-mohan is owner of bosch
+mohan is from India
