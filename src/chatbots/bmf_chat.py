@@ -18,7 +18,7 @@ def create_bmf_client():
     if not BMF_API_KEY:
         raise ValueError(
             "BMF_API_KEY not found. Please set the BMF_API_KEY environment variable."
-        )
+        )    
 
     client = OpenAI(
         api_key=BMF_API_KEY,

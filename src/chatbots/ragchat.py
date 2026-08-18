@@ -4,7 +4,7 @@ MODEL_NAME = "phi3"
 
 
 def load_knowledge():
-    with open("knowledge.txt", "r", encoding="utf-8") as f:
+    with open("data/knowledge.txt", "r", encoding="utf-8") as f:
         return f.read()
 
 
