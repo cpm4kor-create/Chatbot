@@ -1,0 +1,6 @@
+ollama
+openai
+pillow
+SpeechRecognition
+pyttsx3
+pyaudio
